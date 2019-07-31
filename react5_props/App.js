@@ -2,8 +2,11 @@ class App extends React.Component{
     render(){
         return(
             <div>
-                <YoBaby name="baby"/>
-                <Mood />
+                <Hello
+                    to="Ringo"
+                    from="George"
+                    bangs={8}
+                />
             </div>
         )
     }

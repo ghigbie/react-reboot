@@ -4,7 +4,7 @@ function getMood() {
 }
 
 
-class MoodDisplay extends React.Component {
+class Mood extends React.Component {
     render() {
         return (
             <div>
