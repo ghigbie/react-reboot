@@ -4,16 +4,27 @@ function getNumber(){
 
 
 class RandomNumber extends React.Component{
-    render(numberChoice){
+    render(){
+        const number = getNumber();
+        let msg;
+        if(number === 7 ){
+            msg = 'yo!'
+        }else{
+            msg = 'no!'
+        }
         return (
             <div>
-                <h1>Your number is: { getNumber() }</h1>
-                <h1>Only seven shows: 
-            { getNumber() === this.props.numberChoice ? getNumber() : null}
+                <h1>Your number is: { number }</h1>
+                <h1>Did you win?
+                {number === 7 ? ' Congrats' : ' Sorry'}
                 </h1>
+                {
+                    number === 7 && <img src="http://placekitten.com/g/200/300"/>
+                }
+                <h2>{ msg }</h2>
             </div>
         );
     }
 }
 
-ReactDOM.render(<RandomNumber numberChoice=7 />, document.getElementById('root'))
+ReactDOM.render(<RandomNumber />, document.getElementById('root'))
