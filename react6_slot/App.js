@@ -24,13 +24,8 @@ class App extends React.Component{
                     message={wimMessage}
                 />
             </div>
-        )
+        );
     }
-    <Title title="The World's Dumbest Slot Machine"/>
-    <Machine
-        item1="x"
-        item2="y"
-        item3="x"
-    />
-
 }
+
+ReactDOM.render(document.getElementById('root'), App)
