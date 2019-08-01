@@ -1,6 +1,6 @@
 class App extends React.Component{
     render(){
-        const wimMessage = 'You Win!';
+        const winMessage = 'You Win!';
         const loseMessage = 'You Lose : (';
         return(
             <div>
@@ -10,21 +10,21 @@ class App extends React.Component{
                     s2="y"
                     s3="x"
                     winMessage={winMessage}
-                    loseMessage={loseMessag}
+                    loseMessage={loseMessage}
                 />
                 <Machine
                     s1="y"
                     s2="y"
                     s3="x"
                     winMessage={winMessage}
-                    loseMessage={loseMessag}
+                    loseMessage={loseMessage}
                 />
                 <Machine
                     s1="x"
                     s2="x"
                     s3="x"
                     winMessage={winMessage}
-                    loseMessage={loseMessag}
+                    loseMessage={loseMessage}
                 />
             </div>
         );
