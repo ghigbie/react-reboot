@@ -1,12 +1,13 @@
 class Machine extends React.Component{
     render(){
         const props = this.props;
-        return(
+        const {s1, s2, s3} = props;
+        return
             <div>
                 <div className="slot-container">
-                    <span>{ props.item1 }</span>
-                    <span>{ props.item2 }</span>
-                    <span>{ props.item3 }</span>
+                    <span>{ s1 }</span>
+                    <span>{ s2 }</span>
+                    <span>{ s3 }</span>
                 </div>
                 <p>{ props.message }</p>
             </div>

@@ -6,22 +6,25 @@ class App extends React.Component{
             <div>
                 <Title title="The World's Dumbest Slot Machine" />
                 <Machine
-                    item1="x"
-                    item2="y"
-                    item3="x"
-                    message={loseMessage}
+                    s1="x"
+                    s2="y"
+                    s3="x"
+                    winMessage={winMessage}
+                    loseMessage={loseMessag}
                 />
                 <Machine
-                    item1="y"
-                    item2="y"
-                    item3="x"
-                    message={loseMessage}
+                    s1="y"
+                    s2="y"
+                    s3="x"
+                    winMessage={winMessage}
+                    loseMessage={loseMessag}
                 />
                 <Machine
-                    item1="x"
-                    item2="x"
-                    item3="x"
-                    message={wimMessage}
+                    s1="x"
+                    s2="x"
+                    s3="x"
+                    winMessage={winMessage}
+                    loseMessage={loseMessag}
                 />
             </div>
         );
