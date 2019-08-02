@@ -23,10 +23,13 @@ class Pokedex extends Component{
                 type={pokemon.type}
                 exp={pokemon.exp}/>
         ));
+
         return(
             <div class="Pokedex">
                 <h1>Pokedex!</h1>
-                { pokemons }
+                <div className="Pokedex-cards">
+                    { pokemons }
+                </div>
             </div>
         );
     }
