@@ -4,13 +4,16 @@ class Machine extends React.Component{
         const {s1, s2, s3, winMessage, loseMessage} = props;
         const winner = (s1 === s2) && (s2 === s3)
         return(
-            <div>
-                <div className="slot-container">
+            <div className="Machine">
+                <div className="slot-container"
+                     style={{fontSize: '36px', backgroundColor: 'purple'}}>
                     <span>{ s1 }</span>
                     <span>{ s2 }</span>
                     <span>{ s3 }</span>
                 </div>
-                <p>{winner ?  winMessage : loseMessage }</p> 
+                <p className={winner ? 'Machine-win' : 'Machine-lose'}>
+                {winner ?  winMessage : loseMessage }
+                </p> 
             </div>
         );
     }
