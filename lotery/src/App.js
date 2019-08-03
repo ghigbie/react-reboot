@@ -7,7 +7,13 @@ function App() {
   return (
     <div className="App">
       <Lottery />
-    </div>
+      <br/>
+      <Lottery 
+        title="Mini Lotto"
+        maxBalls="4"
+        maxNumber="10"
+      />
+     </div>
   );
 }
 
