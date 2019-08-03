@@ -21,9 +21,13 @@ class Clicker extends Component{
             <div>
                 <h1>Number is {this.state.number}</h1>
                 <br/>
-                {this.state.number === this.props.win && <h1>You win!</h1>}
-                <br/>
-                {this.state.number !== this.props.win && <button onClick={this.selectRandomNumber}>Select Random Number</button>}
+
+                {this.state.number === this.props.win
+                    ? <h1>You win!</h1>
+                    :<button 
+                        onClick={this.selectRandomNumber}>
+                        Select Random Number
+                    </button>}
             </div>
         );
     }
