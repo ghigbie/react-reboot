@@ -35,10 +35,12 @@ class RollDice extends Component{
                 <div className="dice-container">
                     <Die 
                         className="die"
-                        face={this.state.face1}/>
+                        face={this.state.face1}
+                        rolling={this.state.isRolling}/>
                     <Die
                         className="die"
-                        face={this.state.face2} />
+                        face={this.state.face2}
+                        rolling={this.state.isRolling} />
                 </div>
                 <br/>
                 <br/>

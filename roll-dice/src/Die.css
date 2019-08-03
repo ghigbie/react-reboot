@@ -3,6 +3,11 @@
     padding: 0.35em;
     color: darkblue;
 }
+
+.rolling{
+    animation-name: wobble;
+    animation-duration: .5s;
+}
 @keyframes wobble{
     from {
         transform: translate3d(0, 0, 0);
