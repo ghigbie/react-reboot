@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { directive } from "@babel/types";
+//import './Cliker.css';
 
 class Clicker extends Component{
     constructor(props){
