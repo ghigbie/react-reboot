@@ -11,6 +11,7 @@ class RollDice extends Component{
         this.state = {
             face1: 'two',
             face2: 'three',
+            isRolling: false,
         };
         this.randomFace = this.randomFace.bind(this);
         this.roll = this.roll.bind(this);
@@ -22,11 +23,12 @@ class RollDice extends Component{
         this.setState({
             face1: this.randomFace(),
             face2: this.randomFace(),
+            rolling: true,
         })
     }
     render(){
         return (
-            <div>
+            <div className="RollDice">
                 <div className="dice-container">
                     <Die 
                         className="die"
@@ -37,9 +39,10 @@ class RollDice extends Component{
                 </div>
                 <br/>
                 <br/>
-                <button
+                <button 
+                    className="roll-button"
                     onClick={this.roll}>
-                    Roll Dice
+                    {this.state.isRolling ? 'Rolling...' : 'Roll Dice' }
                 </button>
             </div>
         );
