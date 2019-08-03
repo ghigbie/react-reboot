@@ -12,16 +12,16 @@ class RollDice extends Component{
             face1: 'two',
             face2: 'three',
         };
-        this.randomNumber = this.randomNumber.bind(this);
-        this.rollDice = this.rollDice.bind(this);
+        this.randomFace = this.randomFace.bind(this);
+        this.roll = this.roll.bind(this);
     }
     randomFace(){
-        return this.defaultProps.faces[Math.floor(Math.random()*6)+1];
+        return this.props.faces[Math.floor(Math.random()*this.props.faces.length)];
     }
-    rollDice(){
+    roll(){
         this.setState({
-            number1: this.randomFace(),
-            number2: this.randomFace(),
+            face1: this.randomFace(),
+            face2: this.randomFace(),
         })
     }
     render(){
@@ -38,7 +38,7 @@ class RollDice extends Component{
                 <br/>
                 <br/>
                 <button
-                    onClick={this.rollDice}>
+                    onClick={this.roll}>
                     Roll Dice
                 </button>
             </div>
