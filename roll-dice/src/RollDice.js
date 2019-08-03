@@ -16,7 +16,7 @@ class RollDice extends Component{
         return Math.floor(Math.random()*6)+1;
     }
     rollDice(){
-        this.setSate({
+        this.setState({
             number1: this.randomNumber(),
             number2: this.randomNumber(),
         })
