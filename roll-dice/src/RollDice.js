@@ -23,8 +23,11 @@ class RollDice extends Component{
         this.setState({
             face1: this.randomFace(),
             face2: this.randomFace(),
-            rolling: true,
-        })
+            isRolling: true,
+        });
+        setTimeout(() => {
+            this.setState({ isRolling: false })
+        }, 900);
     }
     render(){
         return (
