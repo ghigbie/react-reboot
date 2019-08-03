@@ -6,7 +6,12 @@ class Clicker extends Component{
         super(props);
         this.state = {
             number: 0
-        }
+        };
+        this.selectRandomNumber = this.selectRandomNumber.bind(this);
+    }
+
+    selectRandomNumber = () => {
+        return Math.floor(Math.random() * this.props.limit )
     }
 
     render(){
@@ -15,7 +20,7 @@ class Clicker extends Component{
                 <h1>Number is {this.state.number}</h1>
                 <br/>
                 <br/>
-                <button>Select Random Number</button>
+                <button onClick={this.selectRandomNumber}>Select Random Number</button>
             </div>
         );
     }
