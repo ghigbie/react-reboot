@@ -1,0 +1,8 @@
+.dice-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.die{
+    margin: 50px;
+}

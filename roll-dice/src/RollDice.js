@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Die from './Die';
-import './Die.css';
+import './RollDice.css';
 
 class RollDice extends Component{
     constructor(props){
@@ -25,8 +25,12 @@ class RollDice extends Component{
         return (
             <div>
                 <div className="dice-container">
-                    <Die number={this.state.number1}/>
-                    <Die number={this.state.number2}/>
+                    <Die 
+                        className="die"
+                        number={this.state.number1}/>
+                    <Die
+                        className="die"
+                        number={this.state.number2} />
                 </div>
                 <br/>
                 <br/>
