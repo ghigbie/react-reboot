@@ -3,12 +3,7 @@ import './Die.css';
 
 class Die extends Component{
     render(){
-        const props = this.props;
-        return (
-            <div>
-                <h1>Dice {props.number} </h1>
-            </div>
-        )
+        return (<i className={`Die fas fa-dice-${this.props.face}`}></i>);
     }
 }
 

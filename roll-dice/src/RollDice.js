@@ -6,8 +6,8 @@ class RollDice extends Component{
     constructor(props){
         super(props);
         this.state = {
-            number1: 1,
-            number2: 2,
+            face1: 'two',
+            face2: 'three',
         };
         this.randomNumber = this.randomNumber.bind(this);
         this.rollDice = this.rollDice.bind(this);
@@ -27,10 +27,10 @@ class RollDice extends Component{
                 <div className="dice-container">
                     <Die 
                         className="die"
-                        number={this.state.number1}/>
+                        face={this.state.face1}/>
                     <Die
                         className="die"
-                        number={this.state.number2} />
+                        face={this.state.face2} />
                 </div>
                 <br/>
                 <br/>
