@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Clicker limit={50}/>
+      <Clicker limit={10} win={7}/>
     </div>
   );
 }
