@@ -8,12 +8,16 @@ class Clicker extends Component{
             number: 0,
         };
         this.selectRandomNumber = this.selectRandomNumber.bind(this);
+        this.reset = this.reset.bind(this);
     }
 
     selectRandomNumber(){
         console.log('select called');
         const random = Math.floor(Math.random() * this.props.limit)+1;
         this.setState({number: random});
+    }
+    reset = () => {
+        this.setState({number: 0});
     }
 
     render(){
@@ -23,8 +27,14 @@ class Clicker extends Component{
                 <br/>
 
                 {this.state.number === this.props.win
-                    ? <h1>You win!</h1>
-                    :<button 
+                    ? <div>
+                      <h1>You win!</h1> 
+                      <button
+                        onClick={this.reset}>
+                        Reset
+                      </button>
+                      </div>
+                    : <button 
                         onClick={this.selectRandomNumber}>
                         Select Random Number
                     </button>}
