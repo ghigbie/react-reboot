@@ -12,7 +12,10 @@ class Clicker extends Component{
     render(){
         return(
             <div>
-                <h1>Number is {number}</h1>
+                <h1>Number is {this.state.number}</h1>
+                <br/>
+                <br/>
+                <button>Select Random Number</button>
             </div>
         );
     }
