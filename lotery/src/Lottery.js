@@ -5,7 +5,7 @@ import './Lottery.css';
 
 class Lottery extends Component{
     static defaultProps = {
-        title: 'Loto',
+        title: 'Lottery',
         maxBalls: 7,
         maxNumber: 69,
 
