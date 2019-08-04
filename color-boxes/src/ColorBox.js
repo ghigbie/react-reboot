@@ -16,11 +16,11 @@ class ColorBox extends Component{
         this.changeColor = this.changeColor.bind(this);
     }
     changeColor(){
-
+        console.log('Change color called');
     }
 
     handleClick(e){
-
+        this.changeColor();
     }
 
     render(){
@@ -28,7 +28,7 @@ class ColorBox extends Component{
             <div className="ColorBox"
                  style={{backgroundColor: this.props.color,
                          color: this.props.color === 'black' && 'white'}}
-                 onClick="handleClick">
+                 onClick={this.handleClick}>
                 <h1>{ this.props.color }</h1>
             </div>
         )
