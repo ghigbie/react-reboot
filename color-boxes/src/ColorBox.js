@@ -15,9 +15,12 @@ class ColorBox extends Component{
         this.handleClick = this.handleClick.bind(this);
         this.changeColor = this.changeColor.bind(this);
     }
+
     changeColor(){
+        console.log(this.props.colors);
         console.log('Change color called');
-    }
+        const colors = this.props.colors.filter((color) => color != color);
+    };
 
     handleClick(e){
         this.changeColor();

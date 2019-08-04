@@ -17,9 +17,10 @@ class BoxesContainer extends Component{
     render(){
         return(
             <div className="BoxesContainer">
-            {
-                this.props.colors.map((color) => (<ColorBox color={color} />))
-            }
+            {this.props.colors.map((color) => (
+                <ColorBox 
+                    color={color} 
+                    colors={this.props.colors} />))}
             </div>
         );
     }
