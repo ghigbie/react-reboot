@@ -17,10 +17,12 @@ class ColorBox extends Component{
         this.changeColor = this.changeColor.bind(this);
     }
 
-    changeColor(){
-        console.log('Change color called');
-        console.log(this.props.colors);
-        const colors = this.props.colors.filter((color) => color != this.state.currentColor);
+    changeColor(){ 
+        let rando = Math.floor(Math.random()* this.props.colors.length);
+        let colors = this.props.colors.filter((color) => color !== this.state.currentColor);
+        this.setState({
+            currentColor: colors[rando]
+        })
     };
 
     handleClick(e){
@@ -28,12 +30,13 @@ class ColorBox extends Component{
     }
 
     render(){
+        
         return(
             <div className="ColorBox"
                  style={{backgroundColor: this.state.currentColor,
-                         color: this.props.color === 'black' && 'white'}}
+                         color: this.state.currentColor === 'black' && 'white'}}
                  onClick={this.handleClick}>
-                <h1>{ this.props.color }</h1>
+                <h1>{ this.state.currentColor }</h1>
             </div>
         )
     }
