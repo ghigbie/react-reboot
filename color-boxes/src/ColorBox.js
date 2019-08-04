@@ -11,15 +11,16 @@ class ColorBox extends Component{
         super(props);
         this.state = {
             currentColor: this.props.color,
+
         };
         this.handleClick = this.handleClick.bind(this);
         this.changeColor = this.changeColor.bind(this);
     }
 
     changeColor(){
-        console.log(this.props.colors);
         console.log('Change color called');
-        const colors = this.props.colors.filter((color) => color != color);
+        console.log(this.props.colors);
+        const colors = this.props.colors.filter((color) => color != this.state.currentColor);
     };
 
     handleClick(e){
@@ -29,7 +30,7 @@ class ColorBox extends Component{
     render(){
         return(
             <div className="ColorBox"
-                 style={{backgroundColor: this.props.color,
+                 style={{backgroundColor: this.state.currentColor,
                          color: this.props.color === 'black' && 'white'}}
                  onClick={this.handleClick}>
                 <h1>{ this.props.color }</h1>

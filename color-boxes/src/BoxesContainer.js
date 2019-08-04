@@ -8,19 +8,14 @@ class BoxesContainer extends Component{
                  'darkred', 'darkblue', 'darkgreen', 'teal', 'violet', 'grey',
                  'black', 'maroon', 'white', 'darkgrey', 'gold'],
     }
-
-    constructor(props){
-        super(props);
-
-    }
-
     render(){
         return(
             <div className="BoxesContainer">
-            {this.props.colors.map((color) => (
+            {this.props.colors.map((color, index) => (
                 <ColorBox 
                     color={color} 
-                    colors={this.props.colors} />))}
+                    colors={this.props.colors} 
+                    key={index}/>))}
             </div>
         );
     }
