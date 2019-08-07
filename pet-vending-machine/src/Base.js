@@ -7,3 +7,5 @@ class Base extends Component{
         </div>
     }
 }
+
+export default Base;

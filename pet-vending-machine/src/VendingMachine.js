@@ -17,3 +17,5 @@ class VendingMachine extends Component{
         );
     }
 }
+
+export default VendingMachine;
