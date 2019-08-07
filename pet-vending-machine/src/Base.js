@@ -1,9 +1,8 @@
-import React, {Component} from React;
+import React, {Component} from 'react';
 
 class Base extends Component{
     render(){
-        <div>
-            <h3>What kind of pet do you want?</h3>
+        <div className="Base">
         </div>
     }
 }
