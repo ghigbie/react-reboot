@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom';
 
 class ReturnAnimal extends Component{
     render(){
         return (
             <div className="Return">
+            moo moo
                 <br/>
-                <Link to="/">Return This Animal</Link>
+                <NavLink to="/">Return This Animal</NavLink>
             </div>
         );
     }

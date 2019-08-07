@@ -6,7 +6,7 @@ class Cat extends Component {
         return(
             <div className="Cat">
                 Meow!
-                <ReturnAnimal/>
+                <ReturnAnimal />
             </div>
         );
     }
