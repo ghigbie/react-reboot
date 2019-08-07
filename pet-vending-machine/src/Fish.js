@@ -8,4 +8,4 @@ class Fish extends Component {
     }
 }
 
-export default Bubbles;
+export default Fish;
