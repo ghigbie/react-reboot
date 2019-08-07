@@ -5,7 +5,6 @@ class ReturnAnimal extends Component{
     render(){
         return (
             <div className="Return">
-            moo moo
                 <br/>
                 <NavLink to="/">Return This Animal</NavLink>
             </div>
