@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 class Cat extends Component {
     render() {
-        <div className="Cat">
-            Meow!
-        </div>
+        return(
+            <div className="Cat">
+                Meow!
+            </div>
+        );
     }
 }
 

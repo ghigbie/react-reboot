@@ -1,11 +1,18 @@
 import React, {Component} from 'react';
 import { Route, NavLink, Switch } from 'react-router-dom';   
+import Base from './Base';
+import Cat from './Cat';
+import Dog from './Dog';
+import Fish from './Fish';
+import Rat from './Rat';
+import SmallCat from './SmallCat';
+
 import './VendingMachine.css';
 
 class VendingMachine extends Component{
 
     render(){
-        render(
+        return (
             <div className="VendingMachine">
                 <h1>{ this.props.title } </h1>
                 <br/>
