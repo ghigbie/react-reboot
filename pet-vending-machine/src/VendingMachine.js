@@ -1,4 +1,5 @@
-import React, {Component} from React;
+import React, {Component} from react;
+import { Route, NavLink, Switch } from react-router;   
 import './VendingMachine.css';
 
 class VendingMachine extends Component{
@@ -10,7 +11,7 @@ class VendingMachine extends Component{
                 <br/>
                 <h3>What kind of pet do you want?</h3>
                 <Switch>
-                    
+                    <Route exact path='/' component={Base} />
                 </Switch>
             </div>
         );
