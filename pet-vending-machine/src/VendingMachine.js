@@ -20,15 +20,15 @@ class VendingMachine extends Component{
                 <br/>
                 <br/>
                 <nav>
-                    <NavLink exact to="/dog" />
-                    <NavLink exact to="/cat" />
-                    <NavLink exact to='/rat' />
-                    <NavLink exact to="/fish" />
-                    <NavLink exact to="/smallcat" />
+                    <NavLink exact to="/dog">Dog</NavLink>
+                    <NavLink exact to="/cat">Cat</NavLink>
+                    <NavLink exact to='/rat'>Rat</NavLink>
+                    <NavLink exact to="/fish">Fish</NavLink>
+                    <NavLink exact to="/smallcat">Small Cat</NavLink>
                 </nav>
                 <Switch>
                     <Route exact path='/' component={Base} />
-                    <Route exact path='dog' component={Dog} />
+                    <Route exact path='/dog' component={Dog} />
                     <Route exact path='/cat' component={Cat} />
                     <Route exact path='/rat' component={Rat} />
                     <Route exact path='/fish' component={Fish} />
