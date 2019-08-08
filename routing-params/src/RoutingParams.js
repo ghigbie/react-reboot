@@ -10,3 +10,5 @@ class RoutingParams extends Component{
         );
     }
 }
+
+export default RoutingParams;
