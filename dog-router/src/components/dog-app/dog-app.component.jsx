@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './DogApp.css';
+import './dog-app.styles.css';
 
 class DogApp extends Component {
     static defaultProps = {
