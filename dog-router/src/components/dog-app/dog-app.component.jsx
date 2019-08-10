@@ -52,7 +52,7 @@ class DogApp extends Component {
         }
         return (
             <div className="DogApp">
-                <Navbar />
+                <Navbar dogs={this.props.dogs}/>
                 <Switch>
                     <Route 
                         exact
