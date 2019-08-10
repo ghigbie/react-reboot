@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
+import './DogApp.css';
 
-class App extends Component {
+class DogApp extends Component {
     static defaultProps = {
         dogs: [
             {
                 name: "Whiskey",
                 age: 5,
-                src: whiskey,
+                //src: whiskey,
                 facts: [
                     "Whiskey loves eating popcorn.",
                     "Whiskey is a terrible guard dog.",
@@ -17,7 +17,7 @@ class App extends Component {
             {
                 name: "Hazel",
                 age: 3,
-                src: hazel,
+               // src: hazel,
                 facts: [
                     "Hazel has soooo much energy!",
                     "Hazel is highly intelligent.",
@@ -27,7 +27,7 @@ class App extends Component {
             {
                 name: "Tubby",
                 age: 4,
-                src: tubby,
+                //src: tubby,
                 facts: [
                     "Tubby is not the brightest dog",
                     "Tubby does not like walks or exercise.",
@@ -38,10 +38,11 @@ class App extends Component {
     };
     render() {
         return (
-            <div className="App">
+            <div className="DogApp">
+                DoggieApp!!!
             </div>
         );
     }
 }
 
-export default App;
+export default DogApp;
