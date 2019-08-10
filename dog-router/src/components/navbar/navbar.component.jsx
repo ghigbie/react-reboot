@@ -5,10 +5,12 @@ import './navbar.styles.css';
 class Navbar extends Component {
     render() {
         const dogLinks = this.props.dogs.map((dog, index) => (
-            <li>
+            <li className='nav-item' key={dog.name}>
                 <NavLink 
                     exact 
-                    to={`/dog/${dog.name}`}>
+                    to={`/dog/${dog.name}`}
+                    key={index}
+                    className="nav-link">
                     {dog.name}
                 </NavLink>
             </li>
@@ -38,7 +40,7 @@ class Navbar extends Component {
                                 Home
                              </NavLink>
                         </li>
-                        
+                        { dogLinks }
                     </ul>
                 </div>
             </nav>
