@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import DogList from './../dog-list/dog-list.component';
+import {Switch, Route} from 'react-router-dom';
+import whiskey from "./../images/whiskey.jpg";
+import tubby from "./../images/tubby.jpg";
+import hazel from "./../images/hazel.jpg";
 import './dog-app.styles.css';
 
 class DogApp extends Component {
@@ -7,7 +12,7 @@ class DogApp extends Component {
             {
                 name: "Whiskey",
                 age: 5,
-                //src: whiskey,
+                src: whiskey,
                 facts: [
                     "Whiskey loves eating popcorn.",
                     "Whiskey is a terrible guard dog.",
@@ -17,7 +22,7 @@ class DogApp extends Component {
             {
                 name: "Hazel",
                 age: 3,
-               // src: hazel,
+                src: hazel,
                 facts: [
                     "Hazel has soooo much energy!",
                     "Hazel is highly intelligent.",
@@ -27,7 +32,7 @@ class DogApp extends Component {
             {
                 name: "Tubby",
                 age: 4,
-                //src: tubby,
+                src: tubby,
                 facts: [
                     "Tubby is not the brightest dog",
                     "Tubby does not like walks or exercise.",
@@ -40,6 +45,11 @@ class DogApp extends Component {
         return (
             <div className="DogApp">
                 DoggieApp!!!
+
+                <Route 
+                    path="/dogs" 
+                    render={() => <DogList dogs={this.props.dogs}/>}
+                />
             </div>
         );
     }
