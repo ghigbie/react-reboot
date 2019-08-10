@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect} from 'react-router-dom';
+import DogList from './../dog-list/dog-list.component';
+import DogDetails from './../dog-details/dog-details.component';
 import './routes.styles.css';
 
 class Routes extends Component {
