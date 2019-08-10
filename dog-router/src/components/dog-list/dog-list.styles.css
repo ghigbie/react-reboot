@@ -11,6 +11,7 @@
     filter: grayscale();
     border-radius: 50%;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3) rgba(0, 0, 0, 0.1);
+    transition: 0.4s filter ease;
 }
 
 .Dog img:hover{
