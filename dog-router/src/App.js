@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <DogApp />
-      <h1 className="display-1">Moo</h1>
     </div>
   );
 }

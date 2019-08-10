@@ -7,7 +7,6 @@ class DogList extends Component{
         return(
             <div className="DogList">
                 <h1 className="display-1 text-center">Doggie List</h1>
-                    <div className="container">
                         <div className='row'>
                         {this.props.dogs.map((dog, index) => (
                             <NavLink
@@ -23,7 +22,6 @@ class DogList extends Component{
                             </NavLink>
                         ))}
                         </div>
-                    </div>
             </div>
         );
     }
