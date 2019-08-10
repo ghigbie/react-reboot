@@ -1,12 +1,43 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './dog-details.styles.css';
+import DogList from '../dog-list/dog-list.component';
 
 class DogDetails extends Component {
     render() {
         let { dog } = this.props;
         return (
             <div className="DogDetails">
-                <h1>{ dog.name }</h1>
+                <div className="container">
+                    <div className="DogDetails row justify-content-center mt-5">
+                        <div className="col-11 col-lg-5">
+                            <div className="DogDetails card">
+                                <img 
+                                    className="card-img-top"
+                                    src={dog.src}
+                                    alt={dog.name}/>
+                                <div className="card-body">
+                                    <h2 className="card-title">{dog.name}</h2>
+                                    <h4 className="card-subtitle text-muted">
+                                        {dog.age} years old
+                                    </h4>
+                                </div>
+                                <ul className="list-group list-group-flush">
+                                {dog.facts.map( (fact, index) => (
+                                    <li 
+                                        className="list-group-item"
+                                        key={index}>
+                                        {fact}
+                                    </li>
+                                ))}
+                                </ul>
+                                <div className="card-body">
+                                    <Link to="/dogs">Go Home</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }
