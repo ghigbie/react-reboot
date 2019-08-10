@@ -1,5 +1,5 @@
 import React from 'react';
-import DogApp from './components/DogApp';
+import DogApp from './components/DogApp/DogApp';
 import './App.css';
 
 function App() {
