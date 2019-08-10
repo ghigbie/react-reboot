@@ -6,7 +6,7 @@ class DogList extends Component{
     render(){
         return(
             <div className="DogList">
-                <h1 className="display-1 text-center">Doggie List</h1>
+                <h1 className="display-3 text-center list-title">Doggie List</h1>
                         <div className='row'>
                         {this.props.dogs.map((dog, index) => (
                             <NavLink
@@ -17,7 +17,7 @@ class DogList extends Component{
                                 <div className='Dog text-center'>
                                     <img src={dog.src}
                                         alt={dog.name} />
-                                    <h3>{dog.name}</h3>
+                                    <h3 className="underline">{dog.name}</h3>
                                 </div>
                             </NavLink>
                         ))}

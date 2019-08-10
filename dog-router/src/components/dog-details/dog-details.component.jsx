@@ -30,7 +30,8 @@ class DogDetails extends Component {
                                 ))}
                                 </ul>
                                 <div className="card-body">
-                                    <Link to="/dogs">Go Home</Link>
+                                    <Link className="btn btn-info"
+                                          to="/dogs">Go Home</Link>
                                 </div>
                             </div>
                         </div>

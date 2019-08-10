@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Navbar from './../navbar/navbar.component';
 import Routes from './../routes/routes.component';
-import whiskey from "./../images/whiskey.jpg";
-import tubby from "./../images/tubby.jpg";
-import hazel from "./../images/hazel.jpg";
+import whiskey from "./../zzz-images/whiskey.jpg";
+import tubby from "./../zzz-images/tubby.jpg";
+import hazel from "./../zzz-images/hazel.jpg";
 import './dog-app.styles.css';
 
 class DogApp extends Component {
