@@ -10,6 +10,10 @@ class MonsterBasic extends Component{
         this.loadMonsters = this.loadMonsters.bind(this)
     };
 
+    componentDidMount(){
+        this.loadMonsters();
+    }
+
     loadMonsters(){
         fetch('https://jsonplaceholder.typicode.com/user')
             .then(response => response.json())
