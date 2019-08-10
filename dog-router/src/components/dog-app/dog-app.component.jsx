@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navbar from './../navbar/navbar.component';
 import DogList from './../dog-list/dog-list.component';
 import DogDetails from './../dog-details/dog-details.component';
 import {Switch, Route} from 'react-router-dom';
@@ -51,7 +52,7 @@ class DogApp extends Component {
         }
         return (
             <div className="DogApp">
-                DoggieApp!!!
+                <Navbar />
                 <Switch>
                     <Route 
                         exact
