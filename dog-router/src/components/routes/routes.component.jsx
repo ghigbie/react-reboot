@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect} from 'react-router-dom';
 import './routes.styles.css';
 
 class Routes extends Component {
-    static defaultProps = {
     render() {
         const getDog = props => {
             let name = props.match.params.name;
@@ -23,6 +22,7 @@ class Routes extends Component {
                         path="/dog/:name"
                         render={getDog}
                     />
+                    <Redirect to='/dogs' />
                 </Switch>
         );
     }
