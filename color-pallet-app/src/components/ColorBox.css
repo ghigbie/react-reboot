@@ -52,4 +52,11 @@
     border: none;
     right: 0px;
     bottom: 0px;
+    color: #fff;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-top-left-radius: 4px;
+    text-transform: uppercase;
 }
