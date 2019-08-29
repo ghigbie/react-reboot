@@ -8,9 +8,16 @@ import Grid from '@material-ui/core/Grid';
 
 const TodoApp = () => {
     return (
-        <div>
-            
-        </div>
+        <Paper 
+            style= {{
+                padding: 0,
+                margin: 0,
+                height: "100vh",
+                backgroundColor: "#fafafa"
+            }}
+            elevation={0}
+        >
+        </Paper>
     )
 }
 
