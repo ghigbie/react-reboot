@@ -5,8 +5,16 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from'@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 
+import TodoList from './todo_list/TodoList';
+
 
 const TodoApp = () => {
+    const initialTodos = [
+        { id: 1, task: 'Walk cat', completed: false },
+        { id: 2, task: 'Walk dog', completed: false },
+        { id: 3, task: 'Walk fish', completed: false }
+    ];
+    const [todos, setTodos] = useState(initialTodos)
     return (
         <Paper 
             style= {{
@@ -17,6 +25,14 @@ const TodoApp = () => {
             }}
             elevation={0}
         >
+            <AppBar color='primary'
+                    position='static'
+                    style=''>
+                <Toolbar>
+                    <Typography color='inherit'>TODOS WITH HOOKS</Typography>
+                </Toolbar>
+            </AppBar>
+            <TodoList todos={todos} />
         </Paper>
     )
 }
