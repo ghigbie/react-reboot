@@ -2,9 +2,17 @@ import React from 'react'
 
 const TodoList = (props) => {
     return (
-    <div className="todo-list">
-        {props.todos.map( todo => (<li>{todo.task}</li>))}
-    </div>
+    <Paper>
+        <List>
+            {props.todos.map( todo => (
+                <ListItem>
+                    <ListItemText>
+                        {todo.task}
+                    </ListItemText>
+                </ListItem>
+            ))}
+        </List>
+    </Paper>
     );
 }
 
