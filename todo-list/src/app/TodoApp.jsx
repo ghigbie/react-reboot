@@ -5,8 +5,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from'@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 
-import TodoForm from './../todo_form/TodoForm';
-import TodoList from './../todo_list/TodoList';
+import TodoForm from '../components/todo_form/TodoForm';
+import TodoList from '../components/todo_list/TodoList';
 
 const TodoApp = () => {
     const initialTodos = [
