@@ -17,7 +17,7 @@ const TodoApp = () => {
     const [todos, setTodos] = useState(initialTodos)
     return (
         <Paper 
-            style= {{
+            style = {{
                 padding: 0,
                 margin: 0,
                 height: "100vh",
@@ -27,7 +27,7 @@ const TodoApp = () => {
         >
             <AppBar color='primary'
                     position='static'
-                    style=''>
+                    style={{ height: '64px' }}>
                 <Toolbar>
                     <Typography color='inherit'>TODOS WITH HOOKS</Typography>
                 </Toolbar>
