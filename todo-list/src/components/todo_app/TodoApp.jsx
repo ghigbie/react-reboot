@@ -32,6 +32,7 @@ const TodoApp = () => {
                     <Typography color='inherit'>TODOS WITH HOOKS</Typography>
                 </Toolbar>
             </AppBar>
+            <TodoForm />
             <TodoList todos={todos} />
         </Paper>
     )
