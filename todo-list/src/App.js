@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import TodoApp from './components/todo_app/TodoApp';
+import TodoApp from './app/TodoApp';
 
 const App = () =>  <TodoApp />
 
