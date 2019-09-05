@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from'@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
+import uuid from 'uuid/v4';
 
 import TodoForm from '../components/todo_form/TodoForm';
 import TodoList from '../components/todo_list/TodoList';
@@ -16,7 +17,7 @@ const TodoApp = () => {
     ];
     const [todos, setTodos] = useState(initialTodos);
     const addTodo = newTodoText => {
-        setTodos([...todos, { id: 4, task: newTodoText, completed: false }]);
+        setTodos([...todos, { id: uuid(), task: newTodoText, completed: false }]);
     };
     const removeTodo = todoId => {
         const updatedTodos = todos.filter(todo => todo.id !== todoId);
