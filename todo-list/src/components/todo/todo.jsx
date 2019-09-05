@@ -14,6 +14,16 @@ const todo = ({ task, completed }) => {
             <ListItemText>
                 {task}
             </ListItemText>
+            <ListItemSecondaryAction aria-label="Delete">
+                <IconButton>
+                    <DeleteIcon />
+                </IconButton>
+            </ListItemSecondaryAction>
+            <ListItemSecondaryAction aria-label="Edit">
+                <IconButton>
+                    <EditIcon />
+                </IconButton>
+            </ListItemSecondaryAction>
         </ListItem>
     )
 }
