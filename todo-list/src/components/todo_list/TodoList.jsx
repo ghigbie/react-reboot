@@ -3,16 +3,18 @@ import Paper from '@material-ui/core/Paper';
 import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 
-import Todo from './../todo/todo';
+import Todo from '../todo/Todo';
 
-const TodoList = (props) => {
+const TodoList = ({todos, removeTodo}) => {
     return (
     <Paper>
         <List>
-            {props.todos.map( todo => (
+            {todos.map( todo => (
                 <Fragment key={todo.id}>
                     <Todo task={todo.task}
-                          completed={todo.completed} />
+                          id={todo.id}
+                          completed={todo.completed} 
+                          removeTodo={removeTodo} />
                     <Divider />
                 </Fragment>
             ))}
