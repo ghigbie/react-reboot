@@ -29,10 +29,10 @@ const TodoApp = () => {
         setTodos(updatedTodos);
     };
     const editTodo = (todoId, newTask) => {
-        const updatedTodo = todos.map(todo => 
+        const updatedTodos = todos.map(todo => 
             todo.id === todoId ? {...todo, task: newTask } : todo
         );
-        setTodos(updatedTodos)
+        setTodos(updatedTodos);
     }
     return (
         <Paper 
