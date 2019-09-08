@@ -8,11 +8,13 @@ import DeleteIcon from "@material-ui/icons/Delete";
 import EditIcon from "@material-ui/icons/Edit";
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 
+import EditTodoForm from './../edit-todo-form/EditTodoForm';
+
 const Todo = ({ task, id, completed, removeTodo, toggleTodo }) => {
     const [isEditing, toggleIsEditing] = useToggleState(false);
     return (
         <ListItem>
-            { isEditing ? (<h1>Editing Time</h1> ): 
+            { isEditing ? (<EditTodoForm />): 
             (<>
             <Checkbox cheked={completed}
                       onClick={() => toggleTodo(id)}
