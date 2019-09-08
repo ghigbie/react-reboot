@@ -14,7 +14,7 @@ const EditTodoForm = ( {editTodo, id, task, toggleEditForm} ) => {
             <TextField value={value}
                        onChange={handelChange}
                        margin="normal"
-                       fullWidth/>
+                       autoFocus/>
         </form>
     );
 }
