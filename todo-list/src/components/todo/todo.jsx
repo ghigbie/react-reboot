@@ -14,7 +14,9 @@ const Todo = ({ task, id, completed, removeTodo, toggleTodo, editTodo }) => {
     const [isEditing, toggleIsEditing] = useToggleState(false);
     return (
         <ListItem>
-            { isEditing ? (<EditTodoForm editTodo={editTodo}/>): 
+            { isEditing ? (<EditTodoForm editTodo={editTodo} 
+                                         id={identifier} 
+                                         task={task}/>): 
             (<>
             <Checkbox cheked={completed}
                       onClick={() => toggleTodo(id)}
