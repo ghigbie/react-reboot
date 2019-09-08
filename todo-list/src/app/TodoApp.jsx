@@ -28,6 +28,12 @@ const TodoApp = () => {
             todo.id === todoId ? {...todo, completed: !todo.completed} : todo);
         setTodos(updatedTodos);
     };
+    const editTodo = (todoId, newTask) => {
+        const updatedTodo = todos.map(todo => 
+            todo.id === todoId ? {...todo, task: newTask } : todo
+        );
+        setTodos(updatedTodos)
+    }
     return (
         <Paper 
             style = {{
@@ -36,8 +42,7 @@ const TodoApp = () => {
                 height: "100vh",
                 backgroundColor: "#fafafa"
             }}
-            elevation={0}
-        >
+            elevation={0}>
             <AppBar color='primary'
                     position='static'
                     style={{ height: '64px' }}>
@@ -52,7 +57,8 @@ const TodoApp = () => {
                     <TodoForm addTodo={addTodo}/>
                     <TodoList todos={todos} 
                               removeTodo={removeTodo}
-                              toggleTodo={toggleTodo}/>
+                              toggleTodo={toggleTodo}
+                              editTodo={editTodo}/>
                 </Grid>
             </Grid>
         </Paper>
