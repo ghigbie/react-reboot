@@ -1,14 +1,14 @@
 import {useState, useEffect} from 'react';
 
-const UseLocalStorageState = (key, defaultVal) => {
+const UseLocalStorageState = (key, defaultValue) => {
     const [state, setState] = useState( () => {
         let val;
         try{
             val = JSON.parse(
-                window.localStorage.getItem(key) || String(defaultVal)
+                window.localStorage.getItem(key) || String(defaultValue)
             );
         }catch(e){
-            val = defaultVal;
+            val = defaultValue;
         }
         return val;
     });
