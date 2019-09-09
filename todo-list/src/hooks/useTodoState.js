@@ -27,7 +27,7 @@ export default initialTodos => {
         todos,
         addTodo,
         removeTodo,
-        toggletodo,
+        toggleTodo,
         editTodo
     }
 };
