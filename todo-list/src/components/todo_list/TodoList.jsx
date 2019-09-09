@@ -12,12 +12,10 @@ const TodoList = ({todos, removeTodo, toggleTodo, editTodo}) => {
                 <List>
                     {todos.map( (todo, index) => (
                         <Fragment key={todo.id}>
-                            <Todo task={todo.task}
-                                id={todo.id}
-                                completed={todo.completed} 
-                                removeTodo={removeTodo}
-                                toggleTodo={toggleTodo}
-                                editTodo={editTodo} />
+                            <Todo {...todo}
+                                  removeTodo={removeTodo}
+                                  toggleTodo={toggleTodo}
+                                  editTodo={editTodo} />
                             {index < todos.length -1 && <Divider /> }
                         </Fragment>
                     ))}
