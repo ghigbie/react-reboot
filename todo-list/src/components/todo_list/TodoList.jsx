@@ -9,7 +9,7 @@ const TodoList = ({todos, removeTodo, toggleTodo, editTodo}) => {
     return (
     <Paper>
         <List>
-            {todos.map( todo => (
+            {todos.map( (todo, index) => (
                 <Fragment key={todo.id}>
                     <Todo task={todo.task}
                           id={todo.id}
@@ -17,7 +17,7 @@ const TodoList = ({todos, removeTodo, toggleTodo, editTodo}) => {
                           removeTodo={removeTodo}
                           toggleTodo={toggleTodo}
                           editTodo={editTodo} />
-                    <Divider />
+                    {index < todos.length -1 && <Divider /> }
                 </Fragment>
             ))}
         </List>
