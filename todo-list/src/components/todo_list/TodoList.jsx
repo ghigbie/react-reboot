@@ -6,7 +6,7 @@ import List from '@material-ui/core/List';
 import Todo from '../todo/Todo';
 
 const TodoList = ({todos, removeTodo, toggleTodo, editTodo}) => {
-    if(todos.length)
+    if(todos)
         return (
             <Paper>
                 <List>

@@ -10,7 +10,11 @@ const EditTodoForm = ( {editTodo, id, task, toggleEditForm} ) => {
             editTodo(id, value);
             reset();
             toggleEditForm();
-        }}>
+            }}
+            style={{
+                margLeft: '1rem',
+                width: '50%'
+            }}>
             <TextField value={value}
                        onChange={handelChange}
                        margin="normal"
