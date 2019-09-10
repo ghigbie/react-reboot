@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import ContextApplication from './src/app/ContextApplication';
+import ContextApplication from './app/ContextApplication';
 
 function App() {
   return (

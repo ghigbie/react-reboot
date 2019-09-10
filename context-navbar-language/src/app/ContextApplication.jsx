@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import Navbar from './components/navbar/Navabar';
+import Navbar from './../components/navbar/Navbar';
 
 class ContextApplication extends Component {
     render() {
