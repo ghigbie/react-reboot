@@ -6,7 +6,7 @@ const HomePage = () => (
             <div className="menuitem">
                 <div className="content">
                     <h1 className="title">HATS</h1>
-                    <span className="title"></span>
+                    <span className="subtitle">SHOP NOW</span>
                 </div>
             </div>
         </div>
