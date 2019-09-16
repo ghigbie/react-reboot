@@ -37,17 +37,15 @@ class SignIn extends Component {
                         type="email" 
                         value={this.state.email} 
                         handleChange={this.handleChange}
-                        onChange={this.hadleChange}
+                        label="email"
                         required/>
-                    <label htmlFor="email">Email</label>
                     <FormInput
                         name="password" 
                         type="password" 
-                        handleChange={this.hadleChange}
                         value={this.state.password} 
-                        onChange={this.handleChange}
+                        handleChange={this.hadleChange}
+                        label="password"
                         required/>
-                    <label htmlFor="password">Password</label>
                     <input type="submit" value='Submit Form'/>
                 </form>
             </div>
