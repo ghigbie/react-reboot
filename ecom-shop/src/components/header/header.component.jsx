@@ -8,7 +8,13 @@ const Header = () => (
     <div className="header">
         <Link className="logo-container" to="/">
             <Logo className='logo' />
-        </Link>      
+        </Link> 
+        <Link className="option" to="/shop">
+            SHOP
+        </Link>     
+        <Link className="option" to="/contact">
+            CONTACT
+        </Link>     
     </div>
 );
 
