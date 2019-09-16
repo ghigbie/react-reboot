@@ -47,8 +47,7 @@ class SignIn extends Component {
                         handleChange={this.hadleChange}
                         label="password"
                         required/>
-                    <input type="submit" value='Submit Form'/>
-                    <CustomButton />
+                    <CustomButton type="submit">Sign In</CustomButton>
                 </form>
             </div>
         )
